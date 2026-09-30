@@ -72,13 +72,13 @@ Download from [OC-AgentBench](https://huggingface.co/datasets/wuyalunnn/OC-Agent
 
 ```bash
 export DATASET_REPO=wuyalunnn/OC-AgentBench
-export DATASET_REVISION=main
+export DATASET_REVISION=v1.0
 python scripts/download_dataset.py --repo-id "$DATASET_REPO" \
   --revision "$DATASET_REVISION" --language all --local-dir data
 python run.py --data-root data/XperienceBench_cn --category all --dry-run
 ```
 
-For English tasks, use `data/XperienceBench_en`. Existing local data can be used directly by changing `--data-root`. `--dry-run` validates task definitions without calling the model. The downloader records the resolved commit; use a fixed commit in `DATASET_REVISION` to repeat the same dataset version.
+For English tasks, use `data/XperienceBench_en`. Existing local data can be used directly by changing `--data-root`. `--dry-run` validates task definitions without calling the model. The downloader records the resolved commit for reproducibility.
 
 ### 3. Build and run
 

@@ -66,8 +66,8 @@ the mounted input directory.
 
 The optional `scripts/download_dataset.py` accepts the dataset ID
 `wuyalunnn/OC-AgentBench`, a revision, an empty local directory, and
-`--language en|cn|all` (default `all`). Use `main` for the current snapshot or a
-fixed commit to reproduce a version; the downloader records the resolved commit.
+`--language en|cn|all` (default `all`). Use `v1.0` for the released dataset or a
+fixed commit for a specific snapshot; the downloader records the resolved commit.
 It preserves the language directory names and does not download image archives. Install `requirements-hf.txt` before
 using it. Set `--data-root` to a language subdirectory, for example
 `data/XperienceBench_cn` when downloaded with `--local-dir data`.

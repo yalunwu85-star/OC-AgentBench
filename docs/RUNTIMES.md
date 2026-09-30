@@ -15,7 +15,7 @@ Use dedicated evaluation machines and limited provider credentials.
 ## Prebuilt images and included build recipes
 
 Image archives are kept outside Git, in
-[XperienceBench-Images/linux-amd64](https://huggingface.co/datasets/wuyalunnn/OC-AgentBench/tree/main/XperienceBench-Images/linux-amd64)
+[XperienceBench-Images/linux-amd64](https://huggingface.co/datasets/wuyalunnn/OC-AgentBench/tree/v1.0/XperienceBench-Images/linux-amd64)
 within the [OC-AgentBench dataset repository](https://huggingface.co/datasets/wuyalunnn/OC-AgentBench).
 If the repository is private, first sign in with `hf auth login`. From the code
 repository root, download only image assets:
@@ -23,13 +23,13 @@ repository root, download only image assets:
 ```bash
 python -m pip install -r requirements-hf.txt
 export DATASET_REPO=wuyalunnn/OC-AgentBench
-export DATASET_REVISION=main
+export DATASET_REVISION=v1.0
 hf download "$DATASET_REPO" --repo-type dataset --revision "$DATASET_REVISION" \
   --include 'XperienceBench-Images/**' --local-dir data
 ```
 
-Use a fixed commit in `DATASET_REVISION` for a specific release. Verify the
-downloaded archives before loading them:
+These commands use release `v1.0`. Verify the downloaded archives before
+loading them:
 
 ```bash
 (cd data/XperienceBench-Images/linux-amd64 && sha256sum -c SHA256SUMS)

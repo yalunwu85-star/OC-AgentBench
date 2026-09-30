@@ -72,13 +72,13 @@ cp .env.example .env
 
 ```bash
 export DATASET_REPO=wuyalunnn/OC-AgentBench
-export DATASET_REVISION=main
+export DATASET_REVISION=v1.0
 python scripts/download_dataset.py --repo-id "$DATASET_REPO" \
   --revision "$DATASET_REVISION" --language all --local-dir data
 python run.py --data-root data/XperienceBench_cn --category all --dry-run
 ```
 
-英文任务使用 `data/XperienceBench_en`。已有本地数据可直接替换 `--data-root`，无需下载。`--dry-run` 只校验任务定义，不调用模型。下载器会记录实际 commit；复现同一版本时，将 `DATASET_REVISION` 改为固定 commit。
+英文任务使用 `data/XperienceBench_en`。已有本地数据可直接替换 `--data-root`，无需下载。`--dry-run` 只校验任务定义，不调用模型。下载器会记录实际 commit，便于复现。
 
 ### 3. 构建与运行
 
