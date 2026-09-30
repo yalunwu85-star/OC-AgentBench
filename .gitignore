@@ -1,0 +1,38 @@
+# Local credentials / configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+auth.json
+auth-profiles.json
+my_api.json
+configs/*.local.json
+# Dataset and run artifacts belong outside the code repository
+/data/
+/workspace/
+/tasks/
+/skills/
+/output/
+/output*/
+/logs/
+/results/
+*.log
+*.jsonl
+*.zip
+*.tar
+*.tar.gz
+# Python / editors
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.DS_Store
+.idea/
+.vscode/
+
+# Local workflow metadata
+.zcode/

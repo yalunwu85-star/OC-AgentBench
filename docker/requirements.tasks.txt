@@ -1,0 +1,7 @@
+# Offline browser tests (KT-44), using the image's system Chromium.
+playwright==1.51.0
+pytest-playwright==0.7.0
+# KT-40 declares these project runtime dependencies.
+click==8.1.8
+ruamel.yaml==0.18.10
+deepdiff==8.4.2

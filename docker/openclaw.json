@@ -1,0 +1,17 @@
+{
+  "gateway": {
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "none"
+    }
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "/tmp_workspace"
+    }
+  },
+  "tools": {
+    "profile": "full"
+  }
+}
