@@ -1,10 +1,22 @@
-# OC-AgentBench（XperienceBench）
+<div align="center">
+
+# OC-AgentBench
+
+### 面向工具型 Agent 的经验迁移评测
+
+![场景数](https://img.shields.io/badge/Scenarios-50-blue)
+![任务领域](https://img.shields.io/badge/Domains-7-blue)
+![经验条件](https://img.shields.io/badge/Conditions-3-blue)
+
+[English](README.md) · [快速开始](#快速开始) · [数据集](https://huggingface.co/datasets/wuyalunnn/OC-AgentBench) · [数据格式](docs/DATASET.md) · [运行环境](docs/RUNTIMES.md)
+
+</div>
+
+---
 
 **OC-AgentBench（XperienceBench）** 用于评估工具型 agent 在新任务中选择和运用历史经验的能力。基准同时关注任务完成情况，以及 agent 的经验使用决策是否得到当前证据的支持。
 
 基准包含 **7 个领域的 50 个场景**，每个场景设置 **3 种条件**，提供对应的**中文和英文**版本：每种语言 **150 个任务版本**，合计 **300 个任务版本**。
-
-[English](README.md) · [数据格式](docs/DATASET.md) · [运行环境](docs/RUNTIMES.md)
 
 ## 基准概览
 

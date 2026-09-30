@@ -1,10 +1,22 @@
-# OC-AgentBench（XperienceBench）
+<div align="center">
+
+# OC-AgentBench
+
+### Benchmarking Experience Transfer in Tool-Using Agents
+
+![Scenarios](https://img.shields.io/badge/Scenarios-50-blue)
+![Domains](https://img.shields.io/badge/Domains-7-blue)
+![Conditions](https://img.shields.io/badge/Conditions-3-blue)
+
+[中文](README_zh.md) · [Quick start](#quick-start) · [Dataset](https://huggingface.co/datasets/wuyalunnn/OC-AgentBench) · [Dataset format](docs/DATASET.md) · [Runtime setup](docs/RUNTIMES.md)
+
+</div>
+
+---
 
 **OC-AgentBench（XperienceBench）** evaluates how tool-using agents select and apply historical experience when solving new tasks. It examines both task completion and whether experience decisions are supported by current evidence.
 
 The benchmark covers **50 scenarios across 7 domains**, with **3 conditions** and corresponding **English and Chinese** versions: **150 task variants per language**, or **300 in total**.
-
-[中文](README_zh.md) · [Dataset format](docs/DATASET.md) · [Runtime setup](docs/RUNTIMES.md)
 
 ## Overview
 
