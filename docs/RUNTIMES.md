@@ -111,6 +111,24 @@ Do not include authentication in endpoint URLs. A shell proxy address accessible
 from the host may not be reachable from a container; use `HTTP_PROXY_INNER`,
 `HTTPS_PROXY_INNER`, and `NO_PROXY_INNER` if needed.
 
+### OpenClaw
+
+Complete the README setup and load or build the OpenClaw image above, then copy the model configuration:
+
+```bash
+cp configs/models.example.json configs/models.local.json
+```
+
+Set `baseUrl`, the model `id` and supported `input` in the copied file; keep `apiKey` as `${OPENROUTER_API_KEY}` to use the key from `.env`. Replace `your-model-id` below with that same model ID; `custom/` is the provider name in the example configuration.
+
+```bash
+export OPENCLAW_MODEL=custom/your-model-id
+python run.py --data-root data/XperienceBench_cn \
+  --category Code_Software_Engineering_and_Security --condition current_task --limit 1 \
+  --agent-backend openclaw --model "$OPENCLAW_MODEL" \
+  --models-config configs/models.local.json
+```
+
 ### Codex built-in web search
 
 `CODEX_WEB_SEARCH` optionally sets Codex `web_search` to `disabled`, `cached`,
